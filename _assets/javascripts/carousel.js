@@ -22,9 +22,10 @@ $(document).ready(function () {
     ]
   });
 
-  var today = new Date();
+  var today    = new Date();
+  var firstDay = 4;
 
-  weekday = today.getDate() > 3 ? today.getDay() : 0;
+  weekday = today.getDate() > firstDay ? today.getDay() : 0;
 
   var slickOpts = {
     initialSlide: weekday,
@@ -48,6 +49,3 @@ $(document).ready(function () {
 
 
 });
-
-
-
